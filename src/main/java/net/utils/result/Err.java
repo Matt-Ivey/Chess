@@ -1,4 +1,4 @@
-package net.utils;
+package net.utils.result;
 
 import com.google.common.base.Objects;
 

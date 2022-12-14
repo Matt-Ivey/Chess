@@ -1,2 +1,5 @@
-package net.players;public interface Owned {
+package net.players;
+
+public interface Owned {
+    Player getPlayer();
 }

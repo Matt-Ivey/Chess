@@ -1,4 +1,6 @@
-package net;
+package net.pieces;
 
-public interface Piece {
+import net.players.Owned;
+
+public interface Piece extends Owned {
 }

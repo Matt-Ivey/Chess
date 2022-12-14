@@ -1,10 +1,12 @@
-package net;
+package net.pieces;
 
-public enum WhitePiece implements Piece {
-    Pawn,
-    Knight,
-    Bishop,
-    Rook,
-    Queen,
-    King
+import net.players.WhiteOwned;
+
+public enum WhitePiece implements Piece, WhiteOwned {
+    pawn,
+    knight,
+    bishop,
+    rook,
+    queen,
+    king
 }

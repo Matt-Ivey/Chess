@@ -1,2 +1,6 @@
-package net.utils;public interface Applicative {
+package net.utils;
+
+public interface Applicative<T> {
+
+
 }

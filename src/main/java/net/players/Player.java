@@ -1,4 +1,4 @@
-package net.pieces;
+package net.players;
 
 public enum Player {
     white,

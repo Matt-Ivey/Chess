@@ -5,15 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cac26660-2396-441f-9bd7-4cc32ccd0735" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/pieces/BlackPiece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/pieces/Piece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/pieces/WhitePiece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/BlackOwned.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/Owned.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/WhiteOwned.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/Applicative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/Functor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/Monad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Err.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Okay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/ResultException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/BoardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/GameIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/GameStateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/pieces/PieceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/utils/result/ResultTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -32,10 +73,127 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="net" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.utils.result" />
+      <recent name="net.utils" />
+      <recent name="net" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="net" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ResultTest.errIsUnchangedByFlatMap">
+    <configuration name="ResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.utils.result" />
+      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultTest.errIsUnchangedByFlatMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.utils.result" />
+      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
+      <option name="METHOD_NAME" value="errIsUnchangedByFlatMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultTest.errIsUnchangedByMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.utils.result" />
+      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
+      <option name="METHOD_NAME" value="errIsUnchangedByMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultTest.isMonad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.utils.result" />
+      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
+      <option name="METHOD_NAME" value="isMonad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultTest.okayGetErrorThrowsResultException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.utils.result" />
+      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
+      <option name="METHOD_NAME" value="okayGetErrorThrowsResultException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ResultTest.errIsUnchangedByFlatMap" />
+        <item itemvalue="JUnit.ResultTest.isMonad" />
+        <item itemvalue="JUnit.ResultTest" />
+        <item itemvalue="JUnit.ResultTest.okayGetErrorThrowsResultException" />
+        <item itemvalue="JUnit.ResultTest.errIsUnchangedByMap" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,7 +202,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670963145225</updated>
+      <workItem from="1670963146367" duration="5207000" />
+      <workItem from="1670997753190" duration="9442000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

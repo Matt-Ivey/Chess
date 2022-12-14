@@ -1,9 +1,9 @@
-package net.utils;
+package net.utils.result;
 
-import net.utils.Err;
-import net.utils.Okay;
-import net.utils.Result;
-import net.utils.ResultException;
+import net.utils.result.Err;
+import net.utils.result.Okay;
+import net.utils.result.Result;
+import net.utils.result.ResultException;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

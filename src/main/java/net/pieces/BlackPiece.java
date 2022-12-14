@@ -1,10 +1,12 @@
-package net;
+package net.pieces;
 
-public enum BlackPiece implements Piece {
-    Pawn,
-    Knight,
-    Bishop,
-    Rook,
-    Queen,
-    King
+import net.players.BlackOwned;
+
+public enum BlackPiece implements Piece, BlackOwned {
+    pawn,
+    knight,
+    bishop,
+    rook,
+    queen,
+    king
 }

@@ -1,5 +1,8 @@
-package net;
+package net.utils;
 
-public interface Functor {
+import java.util.function.Function;
 
+public interface Functor<T> {
+
+    <V> Functor<V> map(Function<T, V> fun);
 }

@@ -1,6 +1,8 @@
-package net.pieces;
+package net.players;
 
-public interface BlackPlayer {
+import net.players.Player;
+
+public interface BlackOwned extends Owned {
     default Player getPlayer() {
         return Player.black;
     }
