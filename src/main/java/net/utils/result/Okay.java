@@ -31,12 +31,14 @@ public class Okay<T> implements Result<T> {
         throw new ResultException("Error accessed on an okay result");
     }
 
-    public <U> Okay<U> map(final Function<T, U> fun) {
-        return Okay.of(fun.apply(value));
+    @Override
+    public <U> Result<U> flatMap(final Function<T, Result<U>> fun) {
+        return fun.apply(value);
     }
 
-    public Result<?> flatMap(final Function<T, Result<?>> fun) {
-        return fun.apply(value);
+    @Override
+    public <U> Okay<U> map(final Function<T, U> fun) {
+        return Okay.of(fun.apply(value));
     }
 
     @Override
@@ -50,6 +52,13 @@ public class Okay<T> implements Result<T> {
     @Override
     public int hashCode() {
         return Objects.hashCode(value);
+    }
+
+    @Override
+    public String toString() {
+        return "Okay{" +
+                value +
+                '}';
     }
 }
 

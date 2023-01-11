@@ -24,7 +24,7 @@ class GameStateTest {
     @Test
     public void boardMustNotBeNull() {
         assertThatExceptionOfType(NullPointerException.class)
-                .isThrownBy(() -> GameState.of(Player.white, null))
+                .isThrownBy(() -> GameState.of(Player.White, null))
                 .withMessage("board must not be null");
     }
 
@@ -37,7 +37,7 @@ class GameStateTest {
 
     @Test
     public void nextToPlayIsMaintained(@Mock final Board board) {
-        final GameState actual = GameState.of(Player.white, board);
+        final GameState actual = GameState.of(Player.White, board);
         assertThat(actual.board()).isEqualTo(board);
     }
 }

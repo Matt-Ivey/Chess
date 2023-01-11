@@ -1,6 +1,7 @@
 package net.pieces;
 
 import net.players.Player;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 
@@ -11,12 +12,12 @@ public class PieceTest {
     @ParameterizedTest
     @EnumSource(WhitePiece.class)
     public void whitePiecesAreOwnedByWhitePlayer(final Piece piece) {
-        assertThat(piece.getPlayer()).isEqualTo(Player.white);
+        assertThat(piece.getPlayer()).isEqualTo(Player.White);
     }
 
     @ParameterizedTest
     @EnumSource(BlackPiece.class)
     public void blackPiecesAreOwnedByBlackPlayer(final Piece piece) {
-        assertThat(piece.getPlayer()).isEqualTo(Player.black);
+        assertThat(piece.getPlayer()).isEqualTo(Player.Black);
     }
 }

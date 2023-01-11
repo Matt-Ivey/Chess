@@ -31,13 +31,14 @@ public class Err<T> implements Result<T> {
         return error;
     }
 
+
     @Override
     public <U> Err<U> map(final Function<T, U> ignoredFun) {
         return Err.of(error);
     }
 
     @Override
-    public Result<?> flatMap(final Function<T, Result<?>> fun) {
+    public <U> Result<U> flatMap(final Function<T, Result<U>> fun) {
         return Err.of(error);
     }
 
@@ -52,5 +53,12 @@ public class Err<T> implements Result<T> {
     @Override
     public int hashCode() {
         return Objects.hashCode(error);
+    }
+
+    @Override
+    public String toString() {
+        return "Err{" +
+                error +
+                '}';
     }
 }

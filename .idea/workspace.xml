@@ -5,35 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cac26660-2396-441f-9bd7-4cc32ccd0735" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/pieces/BlackPiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/pieces/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/pieces/WhitePiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/BlackOwned.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/Owned.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/players/WhiteOwned.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/Applicative.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/Functor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/Monad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Err.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Okay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/ResultException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/BoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/GameIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/GameStateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/pieces/PieceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/utils/result/ResultTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/RuleSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/StandardRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/Rule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/PiecesCannotMoveThroughOtherPieces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/bishop/StandardBishopMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/king/StandardKingMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/knight/StandardKnightMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/pawn/PawnDirectionRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/pawn/StandardPawnMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/queen/standardQueenMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/pieces/rook/StandardRookMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/players/PlayersAlternate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/rulesets/rules/players/PlayersCanOnlyMoveTheirPieces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/utils/Functions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/rulesets/RuleSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/rulesets/StandardRulesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/rulesets/rules/PawnDirectionRuleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/rulesets/rules/PlayersCanOnlyMoveTheirPiecesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/rulesets/rules/StandardPawnMoveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/utils/FunctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/players/BlackOwned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/players/BlackOwned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/players/WhiteOwned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/players/WhiteOwned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/utils/Applicative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/utils/Applicative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/utils/result/Err.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Err.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/utils/result/Okay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Okay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/utils/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/utils/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/GameIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/GameControllerIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/GameStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/GameStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/pieces/PieceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/pieces/PieceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/utils/result/ResultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/utils/result/ResultTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,116 +75,122 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="net.rulesets.rules" />
+      <recent name="net.rules" />
       <recent name="net" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.rulesets.rules" />
       <recent name="net.utils.result" />
       <recent name="net.utils" />
       <recent name="net" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="net.rulesets.rules" />
+      <recent name="net.rules" />
+      <recent name="net.utils" />
       <recent name="net" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="net" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ResultTest.errIsUnchangedByFlatMap">
-    <configuration name="ResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StandardRulesTest.containsTheFollowingRules">
+    <configuration name="StandardPawnMoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="PATTERN" value="net.rulesets.rules.knight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.utils.result" />
-      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
+      <option name="PACKAGE_NAME" value="net.rulesets.rules" />
+      <option name="MAIN_CLASS_NAME" value="net.rulesets.rules.StandardPawnMoveTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultTest.errIsUnchangedByFlatMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StandardPawnMoveTest.otherwisePawnsCannotMoveMoreThanOneSpace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="PATTERN" value="net.rulesets.rules.knight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.utils.result" />
-      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
-      <option name="METHOD_NAME" value="errIsUnchangedByFlatMap" />
+      <option name="PACKAGE_NAME" value="net.rulesets.rules" />
+      <option name="MAIN_CLASS_NAME" value="net.rulesets.rules.StandardPawnMoveTest" />
+      <option name="METHOD_NAME" value="otherwisePawnsCannotMoveMoreThanOneSpace(int,net.GameState,net.Board)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultTest.errIsUnchangedByMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StandardPawnMoveTest.pawnsOnTheSecondRankCanMoveTwoSpaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="PATTERN" value="net.rulesets.rules.knight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.utils.result" />
-      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
-      <option name="METHOD_NAME" value="errIsUnchangedByMap" />
+      <option name="PACKAGE_NAME" value="net.rulesets.rules" />
+      <option name="MAIN_CLASS_NAME" value="net.rulesets.rules.StandardPawnMoveTest" />
+      <option name="METHOD_NAME" value="pawnsOnTheSecondRankCanMoveTwoSpaces(int,net.GameState,net.Board)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultTest.isMonad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StandardPawnMoveTest.pawnsOnTheSecondToLastRankCanMoveTwoSpaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="PATTERN" value="net.rulesets.rules.knight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.utils.result" />
-      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
-      <option name="METHOD_NAME" value="isMonad" />
+      <option name="PACKAGE_NAME" value="net.rulesets.rules" />
+      <option name="MAIN_CLASS_NAME" value="net.rulesets.rules.StandardPawnMoveTest" />
+      <option name="METHOD_NAME" value="pawnsOnTheSecondToLastRankCanMoveTwoSpaces(int,net.GameState,net.Board)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultTest.okayGetErrorThrowsResultException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StandardRulesTest.containsTheFollowingRules" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.utils.result.*" />
+          <option name="PATTERN" value="net.rulesets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.utils.result" />
-      <option name="MAIN_CLASS_NAME" value="net.utils.result.ResultTest" />
-      <option name="METHOD_NAME" value="okayGetErrorThrowsResultException" />
+      <option name="PACKAGE_NAME" value="net.rulesets" />
+      <option name="MAIN_CLASS_NAME" value="net.rulesets.StandardRulesTest" />
+      <option name="METHOD_NAME" value="containsTheFollowingRules" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ResultTest.errIsUnchangedByFlatMap" />
-        <item itemvalue="JUnit.ResultTest.isMonad" />
-        <item itemvalue="JUnit.ResultTest" />
-        <item itemvalue="JUnit.ResultTest.okayGetErrorThrowsResultException" />
-        <item itemvalue="JUnit.ResultTest.errIsUnchangedByMap" />
+        <item itemvalue="JUnit.StandardRulesTest.containsTheFollowingRules" />
+        <item itemvalue="JUnit.StandardPawnMoveTest.otherwisePawnsCannotMoveMoreThanOneSpace" />
+        <item itemvalue="JUnit.StandardPawnMoveTest.pawnsOnTheSecondRankCanMoveTwoSpaces" />
+        <item itemvalue="JUnit.StandardPawnMoveTest" />
+        <item itemvalue="JUnit.StandardPawnMoveTest.pawnsOnTheSecondToLastRankCanMoveTwoSpaces" />
       </list>
     </recent_temporary>
   </component>
@@ -203,11 +215,35 @@
       <option name="presentableId" value="Default" />
       <updated>1670963145225</updated>
       <workItem from="1670963146367" duration="5207000" />
-      <workItem from="1670997753190" duration="9442000" />
+      <workItem from="1670997753190" duration="20854000" />
+      <workItem from="1673374349427" duration="19960000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1671007318587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671007318587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

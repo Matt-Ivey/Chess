@@ -1,13 +1,10 @@
 package net.utils.result;
 
-import net.utils.result.Err;
-import net.utils.result.Okay;
-import net.utils.result.Result;
-import net.utils.result.ResultException;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
+
 
 public class ResultTest {
 

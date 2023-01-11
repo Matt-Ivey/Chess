@@ -2,19 +2,22 @@ package net;
 
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableTable;
+import io.vavr.control.Option;
 import net.pieces.Piece;
 import net.pieces.BlackPiece;
 import net.pieces.WhitePiece;
 
+import static net.utils.Functions.using;
+
 public class Board {
     private final ImmutableTable<Integer, Integer, Piece> representation;
 
-    public Board(final ImmutableTable<Integer, Integer, Piece> representation) {
+    private Board(final ImmutableTable<Integer, Integer, Piece> representation) {
         this.representation = representation;
     }
 
-    public Piece pieceAtPosition(final int col, final int row) {
-        return representation.get(col, row);
+    public Option<Piece> pieceAtPosition(final int col, final int row) {
+        return (Option<Piece>) using(representation.get(col, row)).in(x -> x == null ? Option.none() : Option.some(x));
     }
 
     public static Board standard() {

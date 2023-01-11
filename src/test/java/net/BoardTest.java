@@ -1,5 +1,6 @@
 package net;
 
+import io.vavr.control.Option;
 import net.pieces.BlackPiece;
 import net.pieces.Piece;
 import net.pieces.WhitePiece;
@@ -10,6 +11,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static io.vavr.control.Option.some;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(MockitoExtension.class)
@@ -63,6 +65,12 @@ public class BoardTest {
                 .withPiece(piece).atPosition(col, row)
                 .build();
 
-        assertThat(board.pieceAtPosition(col, row)).isEqualTo(piece);
+        assertThat(board.pieceAtPosition(col, row)).isEqualTo(some(piece));
+    }
+
+    @Test
+    public void emptyPlacesReturnEmpty() {
+        final Board emptyBoard = Board.builder().build();
+        assertThat(emptyBoard.pieceAtPosition(1, 1)).isEqualTo(Option.none());
     }
 }
